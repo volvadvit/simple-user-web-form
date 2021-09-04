@@ -1,6 +1,8 @@
-package com.volvadvit.registration.model;
+package com.volvadvit.userform.model;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
 
     private String firstName;
     private String lastName;

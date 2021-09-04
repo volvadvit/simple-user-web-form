@@ -9,15 +9,4 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
-    <!--
-    <servlet>
-        <servlet-name>registerServlet</servlet-name>
-        <servlet-class>com.volvadvit.registration.controller.RegisterServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>registerServlet</servlet-name>
-        <url-pattern>/register</url-pattern>
-    </servlet-mapping>
--->
 </web-app>

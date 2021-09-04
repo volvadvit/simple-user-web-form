@@ -1,3 +1,4 @@
-com/volvadvit/registration/dao/UserDao.class
-com/volvadvit/registration/controller/RegisterServlet.class
-com/volvadvit/registration/model/User.class
+com/volvadvit/userform/controllers/LoginServlet.class
+com/volvadvit/userform/dao/UserDao.class
+com/volvadvit/userform/controllers/RegisterServlet.class
+com/volvadvit/userform/model/User.class

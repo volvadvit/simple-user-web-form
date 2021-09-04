@@ -1,7 +1,7 @@
-package com.volvadvit.registration.controller;
+package com.volvadvit.userform.controllers;
 
-import com.volvadvit.registration.dao.UserDao;
-import com.volvadvit.registration.model.User;
+import com.volvadvit.userform.dao.UserDao;
+import com.volvadvit.userform.model.User;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -20,11 +20,15 @@ public class RegisterServlet extends HttpServlet {
         try {
             User user = validateInputData(req);
             userDao.resisterUser(user);
-            req.setAttribute("name", user.getFirstName() + " " + user.getLastName());
+            req.setAttribute("name", user.getUsername());
+            req.setAttribute("confirm", "successfully");
         } catch (Exception e) {
+            req.setAttribute("name", "");
+            req.setAttribute("confirm", "not");
             System.err.println(e.getMessage());
+        } finally {
+            req.getRequestDispatcher("register_details.jsp").forward(req, resp);
         }
-        req.getRequestDispatcher("details.jsp").forward(req, resp);
     }
 
     @Override
