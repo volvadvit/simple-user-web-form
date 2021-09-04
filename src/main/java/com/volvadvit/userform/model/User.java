@@ -11,7 +11,6 @@ public class User implements Serializable {
     private String address;
     private String contact;
 
-
     public String getFirstName() {
         return firstName;
     }
