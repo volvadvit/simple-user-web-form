@@ -18,8 +18,8 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
             String[] credentials = validateInputData(req);
-            userDao.loginUser(credentials);
-            req.setAttribute("name", credentials[0] + " " + credentials[1]);
+            String[] fullname = userDao.loginUser(credentials);
+            req.setAttribute("name", fullname[0] + " " + fullname[1]);
             req.setAttribute("confirm", "successfully");
         } catch (Exception e) {
             req.setAttribute("name", "");

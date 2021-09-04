@@ -37,9 +37,9 @@
            <input type="submit" value="Submit" />
           </form>
           <br>
-            <h6>
+            <h4>
                 <a href="/user/"> <b> Back </b> </a>
-            </h6>
+            </h4>
          </div>
     </body>
 </html>

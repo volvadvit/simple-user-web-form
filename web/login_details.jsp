@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Registration</title>
+        <title>User Form App</title>
     </head>
     <body>
         <h1>User <%=request.getAttribute("name")%> <%=request.getAttribute("confirm")%> logged!</h1>
