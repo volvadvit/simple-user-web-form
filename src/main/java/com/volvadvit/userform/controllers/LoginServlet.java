@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.getWriter().append("Server at: ").append(req.getContextPath());
-        req.getRequestDispatcher("login.jsp").forward(req, resp);
+        req.getRequestDispatcher("Login.jsp").forward(req, resp);
     }
 
     private String[] validateInputData(HttpServletRequest req) {

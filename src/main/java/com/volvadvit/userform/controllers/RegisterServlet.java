@@ -34,7 +34,7 @@ public class RegisterServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.getWriter().append("Server at: ").append(req.getContextPath());
-        req.getRequestDispatcher("register.jsp").forward(req, resp);
+        req.getRequestDispatcher("Registration.jsp").forward(req, resp);
     }
 
     private User validateInputData(HttpServletRequest req) {
